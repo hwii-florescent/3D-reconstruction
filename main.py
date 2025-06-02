@@ -149,7 +149,7 @@ if __name__ == '__main__':
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     torch.set_grad_enabled(False)
 
-    # Example usage
+    # Calculate matches for triplets of images
     left_dir  = 'left_angle'
     mid_dir   = 'middle_angle'
     right_dir = 'right_angle'
