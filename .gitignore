@@ -1,0 +1,9 @@
+Lightglue/
+myenv/
+rgb_images/
+__pycache__/
+.featureout/
+test_pair/
+right_angle/
+middle_angle/
+left_angle/
