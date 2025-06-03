@@ -86,7 +86,7 @@ def match_triplet(left_path, mid_path, right_path, feature_dir, device):
     # now match pairs
     with h5py.File(kp_h5, 'r') as f_kp, \
          h5py.File(desc_h5, 'r') as f_desc, \
-         h5py.File(match_h5, 'w') as f_match:
+         h5py.File(match_h5, 'a') as f_match:
         def match_pair_and_store(key0, key1, path0, path1):
             # load features
             kpts0 = torch.from_numpy(f_kp[key0][...]).to(device)
